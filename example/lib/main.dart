@@ -367,7 +367,7 @@ class DemoPageCell extends StatelessWidget {
       alignment: Alignment.center,
       child: FittedBox(
         fit: BoxFit.scaleDown,
-        child: Text(_cellName, style: Theme.of(context).textTheme.headline4),
+        child: Text(_cellName, style: Theme.of(context).textTheme.bodySmall),
       ),
     );
 
@@ -410,7 +410,7 @@ class VisibilityReport extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final headingTextStyle =
-        Theme.of(context).textTheme.headline6!.copyWith(color: Colors.white);
+        Theme.of(context).textTheme.bodySmall!.copyWith(color: Colors.white);
 
     final heading = Container(
       padding: const EdgeInsets.all(_reportPadding),
